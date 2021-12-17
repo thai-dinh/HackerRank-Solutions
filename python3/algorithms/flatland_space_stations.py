@@ -1,28 +1,34 @@
 import math
 
 def flatlandSpaceStations(n, c):
-    """Compute the maximum distance between any city to any space stations.
+	"""Compute the maximum distance between any city to any space stations.
 
-    Keyword arguments:
-    n : Number of city (int)
-    c : Cities owning a space station (int array)
-	Return:
-	maximum : Maximum distance between any space station and any city
-    """
+	Parameters
+	----------
+	n : int
+		Number of city
+	c : int[]
+		Cities owning a space station (int array)
 
-    maximum = 0
+	Return
+	------
+	maximum : int
+		Maximum distance between any space station and any city
+	"""
 
-    stations = c[:]
-    stations.sort()
+	maximum = 0
 
-    # Dist. between stations
-    for i in range(len(stations)-1):
-        diff = math.floor((stations[i+1] - stations[i])/2)
-        maximum = max(maximum, diff)
+	stations = c[:]
+	stations.sort()
 
-    # Dist. between first station and first city
-    maximum = max(maximum, stations[0])
-    # Dist. between last station and last city
-    maximum = max(maximum, math.floor(((n-1) - stations[-1])))
+	# Dist. between stations
+	for i in range(len(stations)-1):
+		diff = math.floor((stations[i+1] - stations[i])/2)
+		maximum = max(maximum, diff)
 
-    return maximum
+	# Dist. between first station and first city
+	maximum = max(maximum, stations[0])
+	# Dist. between last station and last city
+	maximum = max(maximum, math.floor(((n-1) - stations[-1])))
+
+	return maximum

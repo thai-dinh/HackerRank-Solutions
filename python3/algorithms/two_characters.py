@@ -4,10 +4,15 @@ from itertools import combinations
 def alternate(s):
 	"""Determine the longest string possible containing only two alternating letters
 
-	Keyword arguments:
-	s : string
-	Return:
-	longuest : Longuest string possible containing only two alternating letters
+	Parameters
+	----------
+	s : str
+		String
+
+		Return
+		------
+	longuest : int
+		Longuest string size possible containing only two alternating letters
 	"""
 
 	keys = list(Counter(list(s)).keys())
