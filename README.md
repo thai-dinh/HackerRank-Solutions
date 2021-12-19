@@ -13,6 +13,7 @@ Problem | Solution | Difficulty
 [Sherlock and the Valid String](https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem) | [sherlock_and_valid_string.py](python3/algorithms/sherlock_and_valid_string.py) | Medium
 [Pairs](https://www.hackerrank.com/challenges/pairs/problem) | [pairs.py](python3/algorithms/pairs.py) | Medium
 [Max Min](https://www.hackerrank.com/challenges/angry-children/problem) | [max_min.py](python3/algorithms/max_min.py) | Medium
+[Absolute Permutation](https://www.hackerrank.com/challenges/absolute-permutation/problem) | [absolute_permutation.py](python3/algorithms/absolute_permutation.py) | Medium
 
 ### Data Structures
 
